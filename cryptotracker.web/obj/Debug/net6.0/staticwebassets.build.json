@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MMRsLs4kTBMRuIrqCjo9cpqiV41x0iM9XR7Y4QlyIKE=",
+  "Source": "cryptotracker.web",
+  "BasePath": "_content/cryptotracker.web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

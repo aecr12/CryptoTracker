@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.web\\cryptotracker.web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\cryptotracker.dataaccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\cryptotracker.dataaccess.csproj",
+        "projectName": "cryptotracker.dataaccess",
+        "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\cryptotracker.dataaccess.csproj",
+        "packagesPath": "C:\\Users\\Aykut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aykut\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj": {
+                "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj",
+        "projectName": "cryptotracker.entity",
+        "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj",
+        "packagesPath": "C:\\Users\\Aykut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aykut\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.web\\cryptotracker.web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.web\\cryptotracker.web.csproj",
+        "projectName": "cryptotracker.web",
+        "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.web\\cryptotracker.web.csproj",
+        "packagesPath": "C:\\Users\\Aykut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aykut\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\cryptotracker.dataaccess.csproj": {
+                "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.dataaccess\\cryptotracker.dataaccess.csproj"
+              },
+              "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj": {
+                "projectPath": "C:\\Users\\Aykut\\Desktop\\CryptoTracker\\CryptoTracker-master\\cryptotracker.entity\\cryptotracker.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@model DumpingDataViewModal
+<script src="https://kit.fontawesome.com/07e82bb3ad.js" crossorigin="anonymous"></script>
+<div class="card" style="width: 18rem;">
+  @* <img src="..." class="card-img-top" alt="..."> *@
+  <div class="card-body">
+    <h5 class="card-title">Düşüşte...</h5>
+    <p class="card-text">Son 24 saatte en çok düşen coinler...</p>
+  </div>
+  <ul id="dumpingList" class="list-group list-group-flush">
+    @for(var dumping = 0; dumping < Model.DumpingDatas.Count; dumping++)
+    {
+        <li id="dumpListItems" class="list-group-item">
+          <i class="fas fa-chevron-down fa-beat-fade mx-1" style="color: #198754;"></i>
+          @Model.DumpingDatas[dumping].Name</li>
+    }
+    
+  </ul>
+</div>
+
+<script>
+$(document).ready(function() {
+    function updateDumpingList() {
+        $.ajax({
+            url: '/Home/Dumping',
+            type: 'GET',
+            dataType: 'html',
+            success: function(response) {
+              var listItems = $(response).find('li');
+              var iconElements = listItems.find('i');
+               $(response).find('li').each(function() {
+                    $('#dumpingList').empty().append(listItems);
+                    iconElements.addClass('fas fa-chevron-down mx-1 fa-beat-fade').css('color', '#198754');
+               });
+            },
+            error: function(xhr, status, error) {
+                console.log(error);
+                // TODO: Handle the error appropriately
+            },
+            complete: function(){
+                setTimeout(function(){
+                    updateDumpingList();
+                },20000);
+            }
+        });
+    }
+    updateDumpingList();
+});
+</script>

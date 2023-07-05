@@ -1,0 +1,49 @@
+@model TrendingDataViewModal
+<script src="https://kit.fontawesome.com/07e82bb3ad.js" crossorigin="anonymous"></script>
+<div class="card" style="width: 18rem;">
+@* <img src="..." class="card-img-top" alt="..."> *@
+  <div class="card-body">
+    <h5 class="card-title">Yükselişte...</h5>
+    <p class="card-text">Son 24 saatte en çok yükselen coinler...</p>
+    
+  </div>
+  <ul id="trendingList" class="list-group list-group-flush">
+    @for(var trend = 0; trend < Model.TrendingDatas.Count; trend++)
+    {
+        <li class="list-group-item">
+          <i class="fa-solid fa-up-right fa-beat-fade mx-1" style="color: #198754;"></i>
+          @Model.TrendingDatas[trend].Name
+        </li>
+    }
+  </ul>
+</div>
+
+<script>
+$(document).ready(function() {
+    function updateTrendingList() {
+        $.ajax({
+            url: '/Home/Trending',
+            type: 'GET',
+            dataType: 'html',
+            success: function(response) {
+              var listItems = $(response).find('li');
+              var iconElements = listItems.find('i');
+               $(response).find('li').each(function() {
+                    iconElements.addClass('fas fa-chevron-up mx-1 fa-beat-fade').css('color', '#198754');
+                    $('#trendingList').empty().append(listItems);
+               });
+            },
+            error: function(xhr, status, error) {
+                console.log(error);
+                // TODO: Handle the error appropriately
+            },
+            complete: function(){
+                setTimeout(function(){
+                    updateTrendingList();
+                },20000);
+            }
+        });
+    }
+    updateTrendingList();
+});
+</script>
